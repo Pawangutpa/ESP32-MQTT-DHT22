@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "author": "Pawan Gupta",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -9.6, "left": -62.36, "attrs": {} },
+    {
+      "type": "wokwi-mpu6050",
+      "id": "imu1",
+      "top": 59.98,
+      "left": -170.72,
+      "rotate": 180,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 140.4,
+      "left": -236.2,
+      "attrs": { "color": "red" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "imu1:VCC", "esp:3V3", "red", [ "h-19.28", "v-67.2", "h187.01" ] ],
+    [ "imu1:GND", "esp:CMD", "black", [ "v0" ] ],
+    [ "imu1:SDA", "esp:21", "green", [ "v9.6", "h47.92", "v-144", "h153.6", "v86.4" ] ],
+    [ "imu1:SCL", "esp:22", "green", [ "v28.8", "h76.72", "v-182.4", "h115.2", "v76.8" ] ],
+    [ "led1:A", "esp:D2", "green", [ "h28.8", "v-19.2" ] ],
+    [ "led1:C", "esp:CMD", "black", [ "v19.2", "h163.6", "v-19.2" ] ]
+  ],
+  "dependencies": {}
+}
