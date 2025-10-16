@@ -4,21 +4,21 @@ This project demonstrates how to interface an **MPU6050 (Accelerometer + Gyrosco
 
 It also includes a **remote LED control** 💡 and **sensor reset function** 🔄 through MQTT.
 
-![ESP32 MQTT MPU6050](photo.jpg)
+![ESP32 MQTT MPU6050](photo.png)
 
 ---
 
 ## 🎥 Project Video
 
 Watch the demo video here:  
-[![Watch Video](video1.mp4)]
+![Watch Video](video2.mp4)
 
 ---
 
 ## 🖼️ Project Photos
 
-![Photo 1](photo1.jpg)  
-![Photo 2](photo2.jpg)  
+![Photo 1](photo1.png)  
+![Photo 2](photo2.png)  
 
 ---
 

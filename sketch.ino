@@ -32,11 +32,11 @@ int16_t ax, ay, az, gx, gy, gz, tempRaw;
 float accelX=0, accelY=0, accelZ=0, gyroX=0, gyroY=0, gyroZ=0, tempC=0;
 
 
-// ----------------------------------------------------------------
+
 // WiFi connection
 void setup_wifi() {
   delay(10);
-  Serial.print("Connecting to ");
+  Serial.print("Connecting  ");
   Serial.println(ssid);
   WiFi.begin(ssid, password);
 
